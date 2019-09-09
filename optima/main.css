@@ -1,0 +1,110 @@
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body {
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.title {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: all 0.5s ease;
+}
+.list-group-item:not(.active):hover {
+  background-color: rgba(255, 255, 255, 0.99);
+}
+.active .badge {
+  background-color: #28a745;
+}
+[type="date"] {
+  background: #fff
+    url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+    calc(100% - 10px) 50% no-repeat;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.smaller {
+  display: flex;
+}
+
+.votebtn {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.votebtn.btn-danger {
+  margin-left: 20px;
+}
+
+.voteBlock {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+#foodVote {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#backToList {
+  width: 90%;
+}
+
+.progText {
+  color: black;
+  right: 50%;
+  transform: translate(50%, -8%);
+  position: absolute;
+}
+
+/*.row div:not(:first-child) {
+  padding: 0;
+}
+
+.row div {
+  padding-right: 0;
+}*/
+
+#refresh {
+  width: 100%;
+}
+
+.row {
+  max-width: 100%;
+  float: none;
+  margin: 0 auto;
+}
+.col-sm-4 {
+}
+.logo {
+  max-height: 150px;
+  max-width: 100%;
+  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+  /*filter: url(#drop-shadow);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";*/
+}
+li.list-group-item div.d-flex {
+  /* background: red; */
+}
+
+.footer {
+  color: white;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000000;
+}
