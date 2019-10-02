@@ -45,7 +45,7 @@ module.exports = class {
     // console.log(body);
     const arr = [];
     mainText.querySelectorAll("p").forEach((element, index) => {
-      if (index > 3) arr.push(element.innerHTML);
+      if (index > 1) arr.push(element.innerHTML);
     });
     const date = mainText
       .querySelector("h3")
@@ -84,7 +84,7 @@ module.exports = class {
       const food = foodList[i];
       this.addToDb("FoodListOptima", [
         null,
-        food.date.toUTCString(),
+        food.date.toString(),
         food.sv,
         food.fi,
         food.date.getTime()
@@ -107,7 +107,6 @@ module.exports = class {
           }
 
           console.log(addArray);
-
           console.log(`INSERT INTO ${table} VALUES (${j})`);
 
           try {
