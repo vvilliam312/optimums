@@ -162,7 +162,7 @@ function addToDb(table, addArray) {
 
         lastId = this.lastID;
 
-        if (lastId == null) return reject("Ip Alrady Voted");
+        if (lastId == null) return reject("Ip Already Voted");
 
         resolve(lastId);
       });
